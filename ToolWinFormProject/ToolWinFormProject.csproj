@@ -46,14 +46,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="BarCode.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="BarCode.Designer.cs">
+      <DependentUpon>BarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID.Designer.cs">
+      <DependentUpon>ID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDVerification.Designer.cs">
+      <DependentUpon>IDVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Media.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media.Designer.cs">
+      <DependentUpon>Media.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Note.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Note.Designer.cs">
+      <DependentUpon>Note.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Remind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remind.Designer.cs">
+      <DependentUpon>Remind.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenShot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenShot.Designer.cs">
+      <DependentUpon>ScreenShot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Timer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Timer.Designer.cs">
+      <DependentUpon>Timer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToolMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolMainForm.Designer.cs">
+      <DependentUpon>ToolMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Timer.resx">
+      <DependentUpon>Timer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolMainForm.resx">
+      <DependentUpon>ToolMainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ToolWinFormProject
 {
-    public partial class IDVerification : Form
+    public partial class CheckID : Form
     {
-        public IDVerification()
+        public CheckID()
         {
             InitializeComponent();
         }

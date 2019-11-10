@@ -1,6 +1,6 @@
 ﻿namespace ToolWinFormProject
 {
-    partial class BarCode
+    partial class CheckID
     {
         /// <summary>
         /// Required designer variable.
@@ -63,14 +63,14 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // BarCode
+            // CheckID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "BarCode";
-            this.Text = "BarCode";
+            this.Name = "CheckID";
+            this.Text = "CheckID";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -52,17 +52,23 @@
     <Compile Include="BarCode.Designer.cs">
       <DependentUpon>BarCode.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckID.Designer.cs">
+      <DependentUpon>CheckID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Converter.Designer.cs">
+      <DependentUpon>Converter.cs</DependentUpon>
+    </Compile>
     <Compile Include="ID.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ID.Designer.cs">
       <DependentUpon>ID.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IDVerification.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IDVerification.Designer.cs">
-      <DependentUpon>IDVerification.cs</DependentUpon>
     </Compile>
     <Compile Include="Media.cs">
       <SubType>Form</SubType>
@@ -108,6 +114,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BarCode.resx">
+      <DependentUpon>BarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckID.resx">
+      <DependentUpon>CheckID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Converter.resx">
+      <DependentUpon>Converter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Timer.resx">
       <DependentUpon>Timer.cs</DependentUpon>
     </EmbeddedResource>

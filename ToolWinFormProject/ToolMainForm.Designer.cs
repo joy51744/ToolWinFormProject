@@ -36,11 +36,11 @@
             this.buttonMedia = new System.Windows.Forms.Button();
             this.buttonScreenShot = new System.Windows.Forms.Button();
             this.buttonBarCode = new System.Windows.Forms.Button();
-            this.buttonIDVerification = new System.Windows.Forms.Button();
+            this.buttonIDProduce = new System.Windows.Forms.Button();
             this.buttonID = new System.Windows.Forms.Button();
             this.buttonPassword = new System.Windows.Forms.Button();
             this.buttonRemind = new System.Windows.Forms.Button();
-            this.buttonConverter = new System.Windows.Forms.Button();
+            this.buttonTimer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +60,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(31, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel1.Text = "離開";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
@@ -118,25 +118,25 @@
             this.buttonBarCode.UseVisualStyleBackColor = true;
             this.buttonBarCode.Click += new System.EventHandler(this.buttonBarCode_Click);
             // 
-            // buttonIDVerification
+            // buttonIDProduce
             // 
-            this.buttonIDVerification.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonIDVerification.Location = new System.Drawing.Point(334, 231);
-            this.buttonIDVerification.Name = "buttonIDVerification";
-            this.buttonIDVerification.Size = new System.Drawing.Size(130, 45);
-            this.buttonIDVerification.TabIndex = 98;
-            this.buttonIDVerification.Text = "身分證認證";
-            this.buttonIDVerification.UseVisualStyleBackColor = true;
-            this.buttonIDVerification.Click += new System.EventHandler(this.buttonIDVerification_Click);
+            this.buttonIDProduce.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonIDProduce.Location = new System.Drawing.Point(334, 231);
+            this.buttonIDProduce.Name = "buttonIDProduce";
+            this.buttonIDProduce.Size = new System.Drawing.Size(130, 45);
+            this.buttonIDProduce.TabIndex = 98;
+            this.buttonIDProduce.Text = "身分證產生器";
+            this.buttonIDProduce.UseVisualStyleBackColor = true;
+            this.buttonIDProduce.Click += new System.EventHandler(this.buttonIDVerification_Click);
             // 
             // buttonID
             // 
-            this.buttonID.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonID.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.buttonID.Location = new System.Drawing.Point(334, 89);
             this.buttonID.Name = "buttonID";
             this.buttonID.Size = new System.Drawing.Size(130, 45);
             this.buttonID.TabIndex = 97;
-            this.buttonID.Text = "身分證產生器";
+            this.buttonID.Text = "身分證認證";
             this.buttonID.UseVisualStyleBackColor = true;
             this.buttonID.Click += new System.EventHandler(this.buttonID_Click);
             // 
@@ -162,24 +162,24 @@
             this.buttonRemind.UseVisualStyleBackColor = true;
             this.buttonRemind.Click += new System.EventHandler(this.buttonRemind_Click);
             // 
-            // buttonConverter
+            // buttonTimer
             // 
-            this.buttonConverter.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonConverter.Location = new System.Drawing.Point(25, 89);
-            this.buttonConverter.Name = "buttonConverter";
-            this.buttonConverter.Size = new System.Drawing.Size(130, 45);
-            this.buttonConverter.TabIndex = 94;
-            this.buttonConverter.Text = "轉換器";
-            this.buttonConverter.UseVisualStyleBackColor = true;
-            this.buttonConverter.Click += new System.EventHandler(this.buttonConverter_Click);
+            this.buttonTimer.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonTimer.Location = new System.Drawing.Point(25, 89);
+            this.buttonTimer.Name = "buttonTimer";
+            this.buttonTimer.Size = new System.Drawing.Size(130, 45);
+            this.buttonTimer.TabIndex = 94;
+            this.buttonTimer.Text = "轉換器";
+            this.buttonTimer.UseVisualStyleBackColor = true;
+            this.buttonTimer.Click += new System.EventHandler(this.buttonTimer_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calisto MT", 21.75F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label1.Location = new System.Drawing.Point(292, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(215, 34);
+            this.label1.Size = new System.Drawing.Size(216, 33);
             this.label1.TabIndex = 93;
             this.label1.Text = "C# Tool Project";
             // 
@@ -192,11 +192,11 @@
             this.Controls.Add(this.buttonMedia);
             this.Controls.Add(this.buttonScreenShot);
             this.Controls.Add(this.buttonBarCode);
-            this.Controls.Add(this.buttonIDVerification);
+            this.Controls.Add(this.buttonIDProduce);
             this.Controls.Add(this.buttonID);
             this.Controls.Add(this.buttonPassword);
             this.Controls.Add(this.buttonRemind);
-            this.Controls.Add(this.buttonConverter);
+            this.Controls.Add(this.buttonTimer);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "ToolMainForm";
@@ -218,11 +218,11 @@
         private System.Windows.Forms.Button buttonMedia;
         private System.Windows.Forms.Button buttonScreenShot;
         private System.Windows.Forms.Button buttonBarCode;
-        private System.Windows.Forms.Button buttonIDVerification;
+        private System.Windows.Forms.Button buttonIDProduce;
         private System.Windows.Forms.Button buttonID;
         private System.Windows.Forms.Button buttonPassword;
         private System.Windows.Forms.Button buttonRemind;
-        private System.Windows.Forms.Button buttonConverter;
+        private System.Windows.Forms.Button buttonTimer;
         private System.Windows.Forms.Label label1;
     }
 }

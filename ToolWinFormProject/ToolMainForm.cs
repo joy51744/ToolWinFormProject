@@ -17,11 +17,11 @@ namespace ToolWinFormProject
             InitializeComponent();
         }
 
-        private void buttonConverter_Click(object sender, EventArgs e)
+        private void buttonTimer_Click(object sender, EventArgs e)
         {
-            Converter converter = new Converter();
+            Converter timer = new Converter();
             this.Visible = false;
-            converter.Show();
+            timer.Show();
         }
 
         private void buttonRemind_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace ToolWinFormProject
 
         private void buttonIDVerification_Click(object sender, EventArgs e)
         {
-            CheckID id = new CheckID();
+            IDProduce id = new IDProduce();
             this.Visible = false;
             id.Show();
         }

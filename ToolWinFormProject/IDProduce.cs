@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ToolWinFormProject
 {
-    public partial class CheckID : Form
+    public partial class IDProduce : Form
     {
-        public CheckID()
+        public IDProduce()
         {
             InitializeComponent();
         }

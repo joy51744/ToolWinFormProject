@@ -1,6 +1,6 @@
 ﻿namespace ToolWinFormProject
 {
-    partial class BarCode
+    partial class IDProduce
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // IDProduce
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "BarCode";
+            this.ClientSize = new System.Drawing.Size(584, 362);
+            this.Name = "IDProduce";
+            this.Text = "C#小工具專案 | 身分證產生器";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

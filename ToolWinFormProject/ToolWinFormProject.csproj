@@ -100,12 +100,6 @@
     <Compile Include="ScreenShot.Designer.cs">
       <DependentUpon>ScreenShot.cs</DependentUpon>
     </Compile>
-    <Compile Include="Timer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Timer.Designer.cs">
-      <DependentUpon>Timer.cs</DependentUpon>
-    </Compile>
     <Compile Include="ToolMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,9 +116,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IDProduce.resx">
       <DependentUpon>IDProduce.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Timer.resx">
-      <DependentUpon>Timer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ToolMainForm.resx">
       <DependentUpon>ToolMainForm.cs</DependentUpon>

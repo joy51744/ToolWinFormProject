@@ -19,6 +19,7 @@ namespace ToolWinFormProject
 
         private void buttonTimer_Click(object sender, EventArgs e)
         {
+        //https://download.csdn.net/download/xuewuzhijing10/3162530
             Converter timer = new Converter();
             this.Visible = false;
             timer.Show();
@@ -26,6 +27,7 @@ namespace ToolWinFormProject
 
         private void buttonRemind_Click(object sender, EventArgs e)
         {
+        //https://blog.csdn.net/qq_38261174/article/details/85601645
             Remind remind = new Remind();
             this.Visible = false;
             remind.Show();
@@ -61,6 +63,7 @@ namespace ToolWinFormProject
 
         private void buttonScreenShot_Click(object sender, EventArgs e)
         {
+        //https://blog.csdn.net/qq_38261174/article/details/85274325
             ScreenShot screen = new ScreenShot();
             this.Visible = false;
             screen.Show();

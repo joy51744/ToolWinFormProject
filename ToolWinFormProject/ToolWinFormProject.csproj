@@ -36,6 +36,10 @@
     <Reference Include="BarcodeStandard, Version=2.2.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\BarcodeLib.2.2.3\lib\netstandard2.0\BarcodeStandard.dll</HintPath>
     </Reference>
+    <Reference Include="ChineseConverter">
+      <HintPath>..\..\..\..\Downloads\好例子网_ChineseConvert\ChineseConvert\ChineseConvert\bin\Debug\ChineseConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -61,6 +65,12 @@
     </Compile>
     <Compile Include="BarCode.Designer.cs">
       <DependentUpon>BarCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHTConvertCHS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHTConvertCHS.Designer.cs">
+      <DependentUpon>CHTConvertCHS.cs</DependentUpon>
     </Compile>
     <Compile Include="Converter.cs">
       <SubType>Form</SubType>
@@ -144,6 +154,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BarCode.resx">
       <DependentUpon>BarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHTConvertCHS.resx">
+      <DependentUpon>CHTConvertCHS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Converter.resx">
       <DependentUpon>Converter.cs</DependentUpon>

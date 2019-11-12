@@ -61,7 +61,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(32, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(31, 22);
             this.toolStripLabel1.Text = "離開";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
@@ -155,13 +155,12 @@
             // 
             // buttonRemind
             // 
-            this.buttonRemind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRemind.BackgroundImage")));
             this.buttonRemind.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.buttonRemind.Location = new System.Drawing.Point(25, 231);
             this.buttonRemind.Name = "buttonRemind";
             this.buttonRemind.Size = new System.Drawing.Size(130, 45);
             this.buttonRemind.TabIndex = 95;
-            this.buttonRemind.Text = "提醒小工具";
+            this.buttonRemind.Text = "定時提醒";
             this.buttonRemind.UseVisualStyleBackColor = true;
             this.buttonRemind.Click += new System.EventHandler(this.buttonRemind_Click);
             // 

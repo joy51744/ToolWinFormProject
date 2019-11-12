@@ -37,9 +37,12 @@
             this.圖片格式轉換ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.音頻格式轉換ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.視頻格式轉換ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.簡體繁體轉換ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.漢字拼音轉換toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.簡體繁體轉換toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,7 +64,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(32, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(31, 22);
             this.toolStripLabel1.Text = "離開";
             this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
             // 
@@ -79,43 +82,40 @@
             // 
             this.toolStripLabel2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.陽曆陰曆轉換toolStripMenuItem,
+            this.toolStripSeparator5,
+            this.漢字拼音轉換toolStripMenuItem,
+            this.簡體繁體轉換toolStripMenuItem,
+            this.toolStripSeparator6,
             this.圖片格式轉換ToolStripMenuItem,
             this.音頻格式轉換ToolStripMenuItem,
-            this.視頻格式轉換ToolStripMenuItem,
-            this.簡體繁體轉換ToolStripMenuItem});
+            this.視頻格式轉換ToolStripMenuItem});
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(45, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(44, 22);
             this.toolStripLabel2.Text = "專案";
             // 
             // 陽曆陰曆轉換toolStripMenuItem
             // 
             this.陽曆陰曆轉換toolStripMenuItem.Name = "陽曆陰曆轉換toolStripMenuItem";
-            this.陽曆陰曆轉換toolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.陽曆陰曆轉換toolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.陽曆陰曆轉換toolStripMenuItem.Text = "陽曆陰曆轉換";
             // 
             // 圖片格式轉換ToolStripMenuItem
             // 
             this.圖片格式轉換ToolStripMenuItem.Name = "圖片格式轉換ToolStripMenuItem";
-            this.圖片格式轉換ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.圖片格式轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.圖片格式轉換ToolStripMenuItem.Text = "圖片格式轉換";
             // 
             // 音頻格式轉換ToolStripMenuItem
             // 
             this.音頻格式轉換ToolStripMenuItem.Name = "音頻格式轉換ToolStripMenuItem";
-            this.音頻格式轉換ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.音頻格式轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.音頻格式轉換ToolStripMenuItem.Text = "音頻格式轉換";
             // 
             // 視頻格式轉換ToolStripMenuItem
             // 
             this.視頻格式轉換ToolStripMenuItem.Name = "視頻格式轉換ToolStripMenuItem";
-            this.視頻格式轉換ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.視頻格式轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.視頻格式轉換ToolStripMenuItem.Text = "視頻格式轉換";
-            // 
-            // 簡體繁體轉換ToolStripMenuItem
-            // 
-            this.簡體繁體轉換ToolStripMenuItem.Name = "簡體繁體轉換ToolStripMenuItem";
-            this.簡體繁體轉換ToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.簡體繁體轉換ToolStripMenuItem.Text = "簡體繁體轉換";
             // 
             // toolStripSeparator3
             // 
@@ -126,6 +126,29 @@
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // 漢字拼音轉換toolStripMenuItem
+            // 
+            this.漢字拼音轉換toolStripMenuItem.Name = "漢字拼音轉換toolStripMenuItem";
+            this.漢字拼音轉換toolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.漢字拼音轉換toolStripMenuItem.Text = "漢字拼音轉換";
+            // 
+            // 簡體繁體轉換toolStripMenuItem
+            // 
+            this.簡體繁體轉換toolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.簡體繁體轉換toolStripMenuItem.Name = "簡體繁體轉換toolStripMenuItem";
+            this.簡體繁體轉換toolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.簡體繁體轉換toolStripMenuItem.Text = "簡體繁體轉換";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripSeparator6
+            // 
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(177, 6);
             // 
             // Converter
             // 
@@ -154,7 +177,10 @@
         private System.Windows.Forms.ToolStripMenuItem 圖片格式轉換ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 音頻格式轉換ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 視頻格式轉換ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 簡體繁體轉換ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 陽曆陰曆轉換toolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem 漢字拼音轉換toolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 簡體繁體轉換toolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
     }
 }

@@ -16,5 +16,31 @@ namespace ToolWinFormProject
         {
             InitializeComponent();
         }
+
+        private void ToolStripLabel1_Click(object sender, EventArgs e)
+        {
+            ToolMainForm main = new ToolMainForm();
+            this.Visible = false;
+            main.Show();
+        }
+
+        private void ButtonCreate_Click(object sender, EventArgs e)
+        {
+            int minLength = 8;
+            int maxLength = 12;
+
+            string charAvailiable = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+            StringBuilder password = new StringBuilder();
+            Random random = new Random();
+
+            int passwordLength = random.Next(minLength, maxLength + 1);
+
+            while (passwordLength-- > 0)
+            {
+                password.Append(charAvailiable[random.Next(charAvailiable.Length)]);
+            }
+            label1.Text = password.ToString();
+        }
     }
 }

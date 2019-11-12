@@ -1,6 +1,6 @@
 ﻿namespace ToolWinFormProject
 {
-    partial class BarCode
+    partial class QRCode
     {
         /// <summary>
         /// Required designer variable.
@@ -38,10 +38,9 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonCreate = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonSave = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonCreate = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,8 +56,8 @@
             this.toolStripSeparator4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(404, 25);
-            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Size = new System.Drawing.Size(374, 25);
+            this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
@@ -75,13 +74,13 @@
             this.barCodeToolStripMenuItem.Name = "barCodeToolStripMenuItem";
             this.barCodeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.barCodeToolStripMenuItem.Text = "BarCode";
+            this.barCodeToolStripMenuItem.Click += new System.EventHandler(this.BarCodeToolStripMenuItem_Click);
             // 
             // qRCodeToolStripMenuItem
             // 
             this.qRCodeToolStripMenuItem.Name = "qRCodeToolStripMenuItem";
             this.qRCodeToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.qRCodeToolStripMenuItem.Text = "QRCode";
-            this.qRCodeToolStripMenuItem.Click += new System.EventHandler(this.QRCodeToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -98,7 +97,6 @@
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel2.Text = "離開";
-            this.toolStripLabel2.Click += new System.EventHandler(this.ToolStripLabel2_Click);
             // 
             // toolStripSeparator3
             // 
@@ -112,62 +110,50 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 41);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(380, 145);
+            this.pictureBox1.Size = new System.Drawing.Size(350, 306);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
-            // 
-            // buttonCreate
-            // 
-            this.buttonCreate.Location = new System.Drawing.Point(317, 179);
-            this.buttonCreate.Name = "buttonCreate";
-            this.buttonCreate.Size = new System.Drawing.Size(75, 23);
-            this.buttonCreate.TabIndex = 8;
-            this.buttonCreate.Text = "Create";
-            this.buttonCreate.UseVisualStyleBackColor = true;
-            this.buttonCreate.Click += new System.EventHandler(this.ButtonCreate_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 213);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(380, 22);
-            this.textBox1.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 190);
+            this.label1.Location = new System.Drawing.Point(12, 385);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 12);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "BarCode:";
+            this.label1.Size = new System.Drawing.Size(30, 12);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Link:";
             // 
-            // buttonSave
+            // textBox1
             // 
-            this.buttonSave.Location = new System.Drawing.Point(211, 179);
-            this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(75, 23);
-            this.buttonSave.TabIndex = 9;
-            this.buttonSave.Text = "Save";
-            this.buttonSave.UseVisualStyleBackColor = true;
-            this.buttonSave.Click += new System.EventHandler(this.ButtonSave_Click);
+            this.textBox1.Location = new System.Drawing.Point(12, 408);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(350, 22);
+            this.textBox1.TabIndex = 4;
             // 
-            // BarCode
+            // buttonCreate
+            // 
+            this.buttonCreate.Location = new System.Drawing.Point(287, 374);
+            this.buttonCreate.Name = "buttonCreate";
+            this.buttonCreate.Size = new System.Drawing.Size(75, 23);
+            this.buttonCreate.TabIndex = 5;
+            this.buttonCreate.Text = "Create";
+            this.buttonCreate.UseVisualStyleBackColor = true;
+            this.buttonCreate.Click += new System.EventHandler(this.ButtonCreate_Click);
+            // 
+            // QRCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(404, 252);
-            this.Controls.Add(this.buttonSave);
+            this.ClientSize = new System.Drawing.Size(374, 452);
             this.Controls.Add(this.buttonCreate);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "BarCode";
+            this.Name = "QRCode";
             this.Text = "C#小工具專案 | 條碼產生器";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -189,9 +175,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button buttonCreate;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonSave;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonCreate;
     }
 }

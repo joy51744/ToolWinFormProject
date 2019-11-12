@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ToolMainForm));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -40,7 +41,7 @@
             this.buttonID = new System.Windows.Forms.Button();
             this.buttonPassword = new System.Windows.Forms.Button();
             this.buttonRemind = new System.Windows.Forms.Button();
-            this.buttonTimer = new System.Windows.Forms.Button();
+            this.buttonConverter = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -76,6 +77,7 @@
             // 
             // buttonNote
             // 
+            this.buttonNote.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNote.BackgroundImage")));
             this.buttonNote.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.buttonNote.Location = new System.Drawing.Point(645, 374);
             this.buttonNote.Name = "buttonNote";
@@ -153,6 +155,7 @@
             // 
             // buttonRemind
             // 
+            this.buttonRemind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonRemind.BackgroundImage")));
             this.buttonRemind.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.buttonRemind.Location = new System.Drawing.Point(25, 231);
             this.buttonRemind.Name = "buttonRemind";
@@ -162,16 +165,17 @@
             this.buttonRemind.UseVisualStyleBackColor = true;
             this.buttonRemind.Click += new System.EventHandler(this.buttonRemind_Click);
             // 
-            // buttonTimer
+            // buttonConverter
             // 
-            this.buttonTimer.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonTimer.Location = new System.Drawing.Point(25, 89);
-            this.buttonTimer.Name = "buttonTimer";
-            this.buttonTimer.Size = new System.Drawing.Size(130, 45);
-            this.buttonTimer.TabIndex = 94;
-            this.buttonTimer.Text = "轉換器";
-            this.buttonTimer.UseVisualStyleBackColor = true;
-            this.buttonTimer.Click += new System.EventHandler(this.buttonTimer_Click);
+            this.buttonConverter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonConverter.BackgroundImage")));
+            this.buttonConverter.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonConverter.Location = new System.Drawing.Point(25, 89);
+            this.buttonConverter.Name = "buttonConverter";
+            this.buttonConverter.Size = new System.Drawing.Size(130, 45);
+            this.buttonConverter.TabIndex = 94;
+            this.buttonConverter.Text = "轉換器";
+            this.buttonConverter.UseVisualStyleBackColor = true;
+            this.buttonConverter.Click += new System.EventHandler(this.buttonConverter_Click);
             // 
             // label1
             // 
@@ -196,7 +200,7 @@
             this.Controls.Add(this.buttonID);
             this.Controls.Add(this.buttonPassword);
             this.Controls.Add(this.buttonRemind);
-            this.Controls.Add(this.buttonTimer);
+            this.Controls.Add(this.buttonConverter);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "ToolMainForm";
@@ -222,7 +226,7 @@
         private System.Windows.Forms.Button buttonID;
         private System.Windows.Forms.Button buttonPassword;
         private System.Windows.Forms.Button buttonRemind;
-        private System.Windows.Forms.Button buttonTimer;
+        private System.Windows.Forms.Button buttonConverter;
         private System.Windows.Forms.Label label1;
     }
 }

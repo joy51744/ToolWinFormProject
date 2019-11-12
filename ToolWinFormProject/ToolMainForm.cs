@@ -17,7 +17,7 @@ namespace ToolWinFormProject
             InitializeComponent();
         }
 
-        private void buttonTimer_Click(object sender, EventArgs e)
+        private void buttonConverter_Click(object sender, EventArgs e)
         {
         //https://download.csdn.net/download/xuewuzhijing10/3162530
             Converter timer = new Converter();

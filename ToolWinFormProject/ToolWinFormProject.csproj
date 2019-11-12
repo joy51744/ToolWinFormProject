@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BarcodeStandard, Version=2.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\BarcodeLib.2.2.3\lib\netstandard2.0\BarcodeStandard.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.1\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +51,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BarCode.cs">
@@ -76,6 +86,24 @@
     <Compile Include="Media.Designer.cs">
       <DependentUpon>Media.cs</DependentUpon>
     </Compile>
+    <Compile Include="Media2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media2.Designer.cs">
+      <DependentUpon>Media2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Media3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media3.Designer.cs">
+      <DependentUpon>Media3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Media4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Media4.Designer.cs">
+      <DependentUpon>Media4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Note.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +115,12 @@
     </Compile>
     <Compile Include="Password.Designer.cs">
       <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QRCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QRCode.Designer.cs">
+      <DependentUpon>QRCode.cs</DependentUpon>
     </Compile>
     <Compile Include="Remind.cs">
       <SubType>Form</SubType>
@@ -108,6 +142,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BarCode.resx">
+      <DependentUpon>BarCode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Converter.resx">
       <DependentUpon>Converter.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +153,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IDProduce.resx">
       <DependentUpon>IDProduce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Media.resx">
+      <DependentUpon>Media.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Media2.resx">
+      <DependentUpon>Media2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Media3.resx">
+      <DependentUpon>Media3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Media4.resx">
+      <DependentUpon>Media4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Note.resx">
+      <DependentUpon>Note.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QRCode.resx">
+      <DependentUpon>QRCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remind.resx">
+      <DependentUpon>Remind.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenShot.resx">
+      <DependentUpon>ScreenShot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ToolMainForm.resx">
       <DependentUpon>ToolMainForm.cs</DependentUpon>
@@ -129,6 +193,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -141,6 +206,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace ToolWinFormProject
 {
-    partial class Media
+    partial class Media3
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Media));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Media3));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.音樂播放器1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,15 +40,16 @@
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.buttonAdd = new System.Windows.Forms.Button();
-            this.buttonClear = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.toolStrip2 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
+            this.toolStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -62,8 +63,8 @@
             this.toolStripSeparator4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(474, 25);
-            this.toolStrip1.TabIndex = 1;
+            this.toolStrip1.Size = new System.Drawing.Size(584, 25);
+            this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
@@ -80,27 +81,27 @@
             // 音樂播放器1ToolStripMenuItem
             // 
             this.音樂播放器1ToolStripMenuItem.Name = "音樂播放器1ToolStripMenuItem";
-            this.音樂播放器1ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.音樂播放器1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.音樂播放器1ToolStripMenuItem.Text = "音樂播放器1";
+            this.音樂播放器1ToolStripMenuItem.Click += new System.EventHandler(this.音樂播放器1ToolStripMenuItem_Click);
             // 
             // 音樂播放器2ToolStripMenuItem
             // 
             this.音樂播放器2ToolStripMenuItem.Name = "音樂播放器2ToolStripMenuItem";
-            this.音樂播放器2ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.音樂播放器2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.音樂播放器2ToolStripMenuItem.Text = "音樂播放器2";
             this.音樂播放器2ToolStripMenuItem.Click += new System.EventHandler(this.音樂播放器2ToolStripMenuItem_Click);
             // 
             // 視頻播放器1ToolStripMenuItem
             // 
             this.視頻播放器1ToolStripMenuItem.Name = "視頻播放器1ToolStripMenuItem";
-            this.視頻播放器1ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.視頻播放器1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.視頻播放器1ToolStripMenuItem.Text = "視頻播放器1";
-            this.視頻播放器1ToolStripMenuItem.Click += new System.EventHandler(this.視頻播放器1ToolStripMenuItem_Click);
             // 
             // 視頻播放器2ToolStripMenuItem
             // 
             this.視頻播放器2ToolStripMenuItem.Name = "視頻播放器2ToolStripMenuItem";
-            this.視頻播放器2ToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.視頻播放器2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.視頻播放器2ToolStripMenuItem.Text = "視頻播放器2";
             this.視頻播放器2ToolStripMenuItem.Click += new System.EventHandler(this.視頻播放器2ToolStripMenuItem_Click);
             // 
@@ -131,88 +132,93 @@
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
+            // axWindowsMediaPlayer1
+            // 
+            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer1.Enabled = true;
+            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 25);
+            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
+            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
+            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(584, 337);
+            this.axWindowsMediaPlayer1.TabIndex = 3;
+            // 
+            // toolStrip2
+            // 
+            this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1,
+            this.toolStripButton2,
+            this.toolStripButton3,
+            this.toolStripButton4});
+            this.toolStrip2.Location = new System.Drawing.Point(0, 25);
+            this.toolStrip2.Name = "toolStrip2";
+            this.toolStrip2.Size = new System.Drawing.Size(584, 25);
+            this.toolStrip2.TabIndex = 4;
+            this.toolStrip2.Text = "toolStrip2";
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.ToolTipText = "Open File";
+            this.toolStripButton1.Click += new System.EventHandler(this.ToolStripButton1_Click);
+            // 
+            // toolStripButton2
+            // 
+            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
+            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton2.Name = "toolStripButton2";
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton2.Text = "toolStripButton2";
+            this.toolStripButton2.ToolTipText = "Play";
+            this.toolStripButton2.Click += new System.EventHandler(this.ToolStripButton2_Click);
+            // 
+            // toolStripButton3
+            // 
+            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
+            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton3.Name = "toolStripButton3";
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton3.Text = "toolStripButton3";
+            this.toolStripButton3.ToolTipText = "Pause";
+            this.toolStripButton3.Click += new System.EventHandler(this.ToolStripButton3_Click);
+            // 
+            // toolStripButton4
+            // 
+            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
+            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton4.Name = "toolStripButton4";
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton4.Text = "toolStripButton4";
+            this.toolStripButton4.ToolTipText = "Stop";
+            this.toolStripButton4.Click += new System.EventHandler(this.ToolStripButton4_Click);
+            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // axWindowsMediaPlayer1
-            // 
-            this.axWindowsMediaPlayer1.Enabled = true;
-            this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(12, 28);
-            this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
-            this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
-            this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(266, 231);
-            this.axWindowsMediaPlayer1.TabIndex = 2;
-            // 
-            // buttonAdd
-            // 
-            this.buttonAdd.Location = new System.Drawing.Point(294, 285);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(73, 31);
-            this.buttonAdd.TabIndex = 9;
-            this.buttonAdd.Text = "增加音樂";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
-            // 
-            // buttonClear
-            // 
-            this.buttonClear.Location = new System.Drawing.Point(390, 285);
-            this.buttonClear.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonClear.Name = "buttonClear";
-            this.buttonClear.Size = new System.Drawing.Size(73, 31);
-            this.buttonClear.TabIndex = 8;
-            this.buttonClear.Text = "清除音樂";
-            this.buttonClear.UseVisualStyleBackColor = true;
-            this.buttonClear.Click += new System.EventHandler(this.ButtonClear_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 12;
-            this.listBox1.Location = new System.Drawing.Point(294, 27);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(169, 232);
-            this.listBox1.TabIndex = 7;
-            this.listBox1.DoubleClick += new System.EventHandler(this.ListBox1_DoubleClick);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 285);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(73, 31);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "重複播放";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 271);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 12);
-            this.label1.TabIndex = 11;
-            // 
-            // Media
+            // Media3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 327);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonAdd);
-            this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.listBox1);
+            this.ClientSize = new System.Drawing.Size(584, 362);
+            this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.axWindowsMediaPlayer1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "Media";
+            this.Name = "Media3";
             this.Text = "C#小工具專案 | 多媒體播放器";
+            this.Load += new System.EventHandler(this.Media3_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
+            this.toolStrip2.ResumeLayout(false);
+            this.toolStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,19 +230,19 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripLabel1;
         private System.Windows.Forms.ToolStripMenuItem 音樂播放器1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 音樂播放器2ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 視頻播放器1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 視頻播放器2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem 視頻播放器1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 視頻播放器2ToolStripMenuItem;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
-        private System.Windows.Forms.Button buttonAdd;
-        private System.Windows.Forms.Button buttonClear;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolStrip toolStrip2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

@@ -32,14 +32,19 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.身分證驗證ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.身分證產生器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonProduce = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.buttonProduce = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -49,7 +54,10 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripSeparator1,
-            this.toolStripSeparator2});
+            this.toolStripSeparator2,
+            this.toolStripLabel2,
+            this.toolStripSeparator3,
+            this.toolStripSeparator4});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(354, 25);
@@ -59,7 +67,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(32, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(31, 22);
             this.toolStripLabel1.Text = "離開";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
@@ -72,6 +80,38 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.身分證驗證ToolStripMenuItem,
+            this.身分證產生器ToolStripMenuItem});
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(44, 22);
+            this.toolStripLabel2.Text = "專案";
+            // 
+            // 身分證驗證ToolStripMenuItem
+            // 
+            this.身分證驗證ToolStripMenuItem.Name = "身分證驗證ToolStripMenuItem";
+            this.身分證驗證ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.身分證驗證ToolStripMenuItem.Text = "身分證驗證";
+            this.身分證驗證ToolStripMenuItem.Click += new System.EventHandler(this.身分證驗證ToolStripMenuItem_Click);
+            // 
+            // 身分證產生器ToolStripMenuItem
+            // 
+            this.身分證產生器ToolStripMenuItem.Name = "身分證產生器ToolStripMenuItem";
+            this.身分證產生器ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.身分證產生器ToolStripMenuItem.Text = "身分證產生器";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
             // groupBox1
             // 
@@ -88,6 +128,43 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "身分證產生器";
+            // 
+            // buttonProduce
+            // 
+            this.buttonProduce.Location = new System.Drawing.Point(123, 104);
+            this.buttonProduce.Name = "buttonProduce";
+            this.buttonProduce.Size = new System.Drawing.Size(75, 23);
+            this.buttonProduce.TabIndex = 9;
+            this.buttonProduce.Text = "產生";
+            this.buttonProduce.UseVisualStyleBackColor = true;
+            this.buttonProduce.Click += new System.EventHandler(this.ButtonProduce_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 12);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "身分證字號(共10碼)";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(133, 62);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(191, 22);
+            this.textBox1.TabIndex = 7;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(277, 25);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(47, 16);
+            this.radioButton3.TabIndex = 6;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "隨機";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -119,43 +196,6 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 20);
             this.comboBox1.TabIndex = 0;
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(277, 25);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(47, 16);
-            this.radioButton3.TabIndex = 6;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "隨機";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(133, 62);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 22);
-            this.textBox1.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 12);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "身分證字號(共10碼)";
-            // 
-            // buttonProduce
-            // 
-            this.buttonProduce.Location = new System.Drawing.Point(123, 104);
-            this.buttonProduce.Name = "buttonProduce";
-            this.buttonProduce.Size = new System.Drawing.Size(75, 23);
-            this.buttonProduce.TabIndex = 9;
-            this.buttonProduce.Text = "產生";
-            this.buttonProduce.UseVisualStyleBackColor = true;
-            this.buttonProduce.Click += new System.EventHandler(this.ButtonProduce_Click);
-            // 
             // IDProduce
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -164,7 +204,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "IDProduce";
-            this.Text = "C#小工具專案 | 身分證產生器";
+            this.Text = "C#小工具專案 | 身分證工具";
             this.Load += new System.EventHandler(this.IDProduce_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -189,5 +229,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripLabel2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripMenuItem 身分證驗證ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 身分證產生器ToolStripMenuItem;
     }
 }

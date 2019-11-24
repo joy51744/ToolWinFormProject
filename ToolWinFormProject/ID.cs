@@ -258,5 +258,12 @@ namespace ToolWinFormProject
             this.Visible = false;
             main.Show();
         }
+
+        private void 身分證產生器ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IDProduce id = new IDProduce();
+            this.Visible = false;
+            id.Show();
+        }
     }
 }

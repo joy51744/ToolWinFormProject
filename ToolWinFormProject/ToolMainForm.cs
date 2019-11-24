@@ -19,7 +19,6 @@ namespace ToolWinFormProject
 
         private void buttonConverter_Click(object sender, EventArgs e)
         {
-        //https://download.csdn.net/download/xuewuzhijing10/3162530
             Converter timer = new Converter();
             this.Visible = false;
             timer.Show();
@@ -27,7 +26,6 @@ namespace ToolWinFormProject
 
         private void buttonRemind_Click(object sender, EventArgs e)
         {
-        //https://blog.csdn.net/qq_38261174/article/details/85601645
             Remind remind = new Remind();
             this.Visible = false;
             remind.Show();
@@ -40,20 +38,6 @@ namespace ToolWinFormProject
             password.Show();
         }
 
-        private void buttonID_Click(object sender, EventArgs e)
-        {
-            ID id = new ID();
-            this.Visible = false;
-            id.Show();
-        }
-
-        private void buttonIDVerification_Click(object sender, EventArgs e)
-        {
-            IDProduce id = new IDProduce();
-            this.Visible = false;
-            id.Show();
-        }
-
         private void buttonBarCode_Click(object sender, EventArgs e)
         {
             BarCode barCode = new BarCode();
@@ -61,19 +45,25 @@ namespace ToolWinFormProject
             barCode.Show();
         }
 
+        private void buttonID_Click(object sender, EventArgs e)
+        {
+            ID id = new ID();
+            this.Visible = false;
+            id.Show();
+        }
+
+        private void buttonWatermark_Click(object sender, EventArgs e)
+        {
+            Watermark watermark = new Watermark();
+            this.Visible = false;
+            watermark.Show();
+        }
+
         private void buttonScreenShot_Click(object sender, EventArgs e)
         {
-        //https://blog.csdn.net/qq_38261174/article/details/85274325
             ScreenShot screen = new ScreenShot();
             this.Visible = false;
             screen.Show();
-        }
-
-        private void buttonMedia_Click(object sender, EventArgs e)
-        {
-            Media media = new Media();
-            this.Visible = false;
-            media.Show();
         }
 
         private void buttonNote_Click(object sender, EventArgs e)
@@ -83,10 +73,31 @@ namespace ToolWinFormProject
             note.Show();
         }
 
+        private void buttonMagnifyingGlass_Click(object sender, EventArgs e)
+        {
+            MagnifyingGlass compress = new MagnifyingGlass();
+            this.Visible = false;
+            compress.Show();
+        }
+
+        private void buttonMedia_Click(object sender, EventArgs e)
+        {
+            Media media = new Media();
+            this.Visible = false;
+            media.Show();
+        }
+
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("PortfolioMainForm.exe");
             this.Visible = false;
+        }
+
+        private void buttonPictureCut_Click(object sender, EventArgs e)
+        {
+            PictureCut cut = new PictureCut();
+            this.Visible = false;
+            cut.Show();
         }
     }
 }

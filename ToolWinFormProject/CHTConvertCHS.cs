@@ -59,5 +59,33 @@ namespace ToolWinFormProject
             }
             return newString;
         }
+
+        private void 圖片格式轉換toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PictureFormatConvert main = new PictureFormatConvert();
+            this.Visible = false;
+            main.Show();
+        }
+
+        private void 金額大小寫轉換toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FinanceConvert main = new FinanceConvert();
+            this.Visible = false;
+            main.Show();
+        }
+
+        private void 漢字拼音轉換toolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CHTConvertPinYin main = new CHTConvertPinYin();
+            this.Visible = false;
+            main.Show();
+        }
+
+        private void toolStripLabel1_Click_1(object sender, EventArgs e)
+        {
+            ToolMainForm main = new ToolMainForm();
+            this.Visible = false;
+            main.Show();
+        }
     }
 }

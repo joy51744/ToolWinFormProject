@@ -47,6 +47,13 @@ namespace ToolWinFormProject
 
         private void buttonID_Click(object sender, EventArgs e)
         {
+            IDProduce id = new IDProduce();
+            this.Visible = false;
+            id.Show();
+        }
+
+        private void buttonIDCheck_Click(object sender, EventArgs e)
+        {
             ID id = new ID();
             this.Visible = false;
             id.Show();
@@ -66,18 +73,11 @@ namespace ToolWinFormProject
             screen.Show();
         }
 
-        private void buttonNote_Click(object sender, EventArgs e)
+        private void buttonImageUpload_Click(object sender, EventArgs e)
         {
-            Note note = new Note();
+            ImageUpload image = new ImageUpload();
             this.Visible = false;
-            note.Show();
-        }
-
-        private void buttonMagnifyingGlass_Click(object sender, EventArgs e)
-        {
-            MagnifyingGlass compress = new MagnifyingGlass();
-            this.Visible = false;
-            compress.Show();
+            image.Show();
         }
 
         private void buttonMedia_Click(object sender, EventArgs e)
@@ -85,6 +85,13 @@ namespace ToolWinFormProject
             Media media = new Media();
             this.Visible = false;
             media.Show();
+        }
+
+        private void buttonNote_Click(object sender, EventArgs e)
+        {
+            Note note = new Note();
+            this.Visible = false;
+            note.Show();
         }
 
         private void toolStripLabel1_Click(object sender, EventArgs e)
@@ -98,6 +105,13 @@ namespace ToolWinFormProject
             PictureCut cut = new PictureCut();
             this.Visible = false;
             cut.Show();
+        }
+
+        private void buttonMagnifyingGlass_Click_1(object sender, EventArgs e)
+        {
+            MagnifyingGlass glass = new MagnifyingGlass();
+            this.Visible = false;
+            glass.Show();
         }
     }
 }

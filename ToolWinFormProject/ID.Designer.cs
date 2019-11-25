@@ -38,11 +38,6 @@
             this.buttonCheck = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.身分證驗證ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.身分證產生器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,10 +46,7 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripSeparator1,
-            this.toolStripSeparator2,
-            this.toolStripLabel2,
-            this.toolStripSeparator3,
-            this.toolStripSeparator4});
+            this.toolStripSeparator2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(334, 25);
@@ -66,7 +58,7 @@
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Size = new System.Drawing.Size(31, 22);
             this.toolStripLabel1.Text = "離開";
-            this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
+            this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
             // toolStripSeparator1
             // 
@@ -130,38 +122,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "出生地:";
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.身分證驗證ToolStripMenuItem,
-            this.身分證產生器ToolStripMenuItem});
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(44, 22);
-            this.toolStripLabel2.Text = "專案";
-            // 
-            // 身分證驗證ToolStripMenuItem
-            // 
-            this.身分證驗證ToolStripMenuItem.Name = "身分證驗證ToolStripMenuItem";
-            this.身分證驗證ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.身分證驗證ToolStripMenuItem.Text = "身分證驗證";
-            // 
-            // 身分證產生器ToolStripMenuItem
-            // 
-            this.身分證產生器ToolStripMenuItem.Name = "身分證產生器ToolStripMenuItem";
-            this.身分證產生器ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.身分證產生器ToolStripMenuItem.Text = "身分證產生器";
-            this.身分證產生器ToolStripMenuItem.Click += new System.EventHandler(this.身分證產生器ToolStripMenuItem_Click);
-            // 
             // ID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -188,17 +148,12 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.TextBox textBoxID;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button buttonCheck;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ToolStripDropDownButton toolStripLabel2;
-        private System.Windows.Forms.ToolStripMenuItem 身分證驗證ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 身分證產生器ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
     }
 }

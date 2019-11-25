@@ -16,12 +16,5 @@ namespace ToolWinFormProject
         {
             InitializeComponent();
         }
-
-        private void toolStripLabel1_Click(object sender, EventArgs e)
-        {
-            ToolMainForm main = new ToolMainForm();
-            this.Visible = false;
-            main.Show();
-        }
     }
 }

@@ -109,12 +109,5 @@ namespace ToolWinFormProject
             else if (comboBox1.Text == address[20]) { id[0] = 30; id[10] = 88; }
             else if (comboBox1.Text == address[21]) { id[0] = 33; id[10] = 90; }
         }
-
-        private void 身分證驗證ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ID id = new ID();
-            this.Visible = false;
-            id.Show();
-        }
     }
 }

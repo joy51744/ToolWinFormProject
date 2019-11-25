@@ -42,27 +42,29 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonScreenShot = new System.Windows.Forms.Button();
+            this.buttonImageUpload = new System.Windows.Forms.Button();
+            this.buttonIDCheck = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonWatermark
             // 
             this.buttonWatermark.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonWatermark.Location = new System.Drawing.Point(334, 370);
+            this.buttonWatermark.Location = new System.Drawing.Point(437, 89);
             this.buttonWatermark.Name = "buttonWatermark";
             this.buttonWatermark.Size = new System.Drawing.Size(130, 45);
-            this.buttonWatermark.TabIndex = 6;
+            this.buttonWatermark.TabIndex = 7;
             this.buttonWatermark.Text = "浮水印";
             this.buttonWatermark.UseVisualStyleBackColor = true;
             this.buttonWatermark.Click += new System.EventHandler(this.buttonWatermark_Click);
             // 
             // buttonMedia
             // 
-            this.buttonMedia.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonMedia.Location = new System.Drawing.Point(643, 371);
+            this.buttonMedia.Font = new System.Drawing.Font("標楷體", 12.25F, System.Drawing.FontStyle.Bold);
+            this.buttonMedia.Location = new System.Drawing.Point(643, 90);
             this.buttonMedia.Name = "buttonMedia";
             this.buttonMedia.Size = new System.Drawing.Size(130, 45);
-            this.buttonMedia.TabIndex = 11;
+            this.buttonMedia.TabIndex = 10;
             this.buttonMedia.Text = "多媒體播放器";
             this.buttonMedia.UseVisualStyleBackColor = true;
             this.buttonMedia.Click += new System.EventHandler(this.buttonMedia_Click);
@@ -70,22 +72,22 @@
             // buttonNote
             // 
             this.buttonNote.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonNote.Location = new System.Drawing.Point(643, 229);
+            this.buttonNote.Location = new System.Drawing.Point(643, 230);
             this.buttonNote.Name = "buttonNote";
             this.buttonNote.Size = new System.Drawing.Size(130, 45);
-            this.buttonNote.TabIndex = 10;
+            this.buttonNote.TabIndex = 11;
             this.buttonNote.Text = "桌面便條";
             this.buttonNote.UseVisualStyleBackColor = true;
             this.buttonNote.Click += new System.EventHandler(this.buttonNote_Click);
             // 
             // buttonID
             // 
-            this.buttonID.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonID.Location = new System.Drawing.Point(334, 230);
+            this.buttonID.Font = new System.Drawing.Font("標楷體", 12.25F, System.Drawing.FontStyle.Bold);
+            this.buttonID.Location = new System.Drawing.Point(231, 230);
             this.buttonID.Name = "buttonID";
             this.buttonID.Size = new System.Drawing.Size(130, 45);
             this.buttonID.TabIndex = 5;
-            this.buttonID.Text = "身分證工具";
+            this.buttonID.Text = "身分證產生器";
             this.buttonID.UseVisualStyleBackColor = true;
             this.buttonID.Click += new System.EventHandler(this.buttonID_Click);
             // 
@@ -97,7 +99,7 @@
             // buttonBarCode
             // 
             this.buttonBarCode.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonBarCode.Location = new System.Drawing.Point(334, 90);
+            this.buttonBarCode.Location = new System.Drawing.Point(231, 90);
             this.buttonBarCode.Name = "buttonBarCode";
             this.buttonBarCode.Size = new System.Drawing.Size(130, 45);
             this.buttonBarCode.TabIndex = 4;
@@ -175,19 +177,43 @@
             // buttonScreenShot
             // 
             this.buttonScreenShot.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonScreenShot.Location = new System.Drawing.Point(643, 90);
+            this.buttonScreenShot.Location = new System.Drawing.Point(437, 230);
             this.buttonScreenShot.Name = "buttonScreenShot";
             this.buttonScreenShot.Size = new System.Drawing.Size(130, 45);
-            this.buttonScreenShot.TabIndex = 7;
+            this.buttonScreenShot.TabIndex = 8;
             this.buttonScreenShot.Text = "螢幕截圖";
             this.buttonScreenShot.UseVisualStyleBackColor = true;
             this.buttonScreenShot.Click += new System.EventHandler(this.buttonScreenShot_Click);
+            // 
+            // buttonImageUpload
+            // 
+            this.buttonImageUpload.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonImageUpload.Location = new System.Drawing.Point(437, 370);
+            this.buttonImageUpload.Name = "buttonImageUpload";
+            this.buttonImageUpload.Size = new System.Drawing.Size(130, 45);
+            this.buttonImageUpload.TabIndex = 9;
+            this.buttonImageUpload.Text = "圖片上傳";
+            this.buttonImageUpload.UseVisualStyleBackColor = true;
+            this.buttonImageUpload.Click += new System.EventHandler(this.buttonImageUpload_Click);
+            // 
+            // buttonIDCheck
+            // 
+            this.buttonIDCheck.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonIDCheck.Location = new System.Drawing.Point(231, 370);
+            this.buttonIDCheck.Name = "buttonIDCheck";
+            this.buttonIDCheck.Size = new System.Drawing.Size(130, 45);
+            this.buttonIDCheck.TabIndex = 6;
+            this.buttonIDCheck.Text = "身分證驗證";
+            this.buttonIDCheck.UseVisualStyleBackColor = true;
+            this.buttonIDCheck.Click += new System.EventHandler(this.buttonIDCheck_Click);
             // 
             // ToolMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonIDCheck);
+            this.Controls.Add(this.buttonImageUpload);
             this.Controls.Add(this.buttonScreenShot);
             this.Controls.Add(this.buttonWatermark);
             this.Controls.Add(this.buttonMedia);
@@ -224,5 +250,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonScreenShot;
+        private System.Windows.Forms.Button buttonImageUpload;
+        private System.Windows.Forms.Button buttonIDCheck;
     }
 }
